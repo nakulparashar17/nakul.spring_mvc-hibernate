@@ -94,12 +94,14 @@
       <version>5.1.14.RELEASE</version>
 	</dependency>
   </dependencies>
+  <configurations>
 <configuration>
   <processTypes>
      <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
   </processTypes>
   <jdkVersion>1.8</jdkVersion>
 </configuration>
+</configurations>
   <build>
     <finalName>crud_spring_hibernate</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
