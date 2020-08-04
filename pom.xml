@@ -94,11 +94,21 @@
       <version>5.1.14.RELEASE</version>
 	</dependency>
   </dependencies>
-
+<configuration>
+  <processTypes>
+     <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+  </processTypes>
+  <jdkVersion>1.8</jdkVersion>
+</configuration>
   <build>
     <finalName>crud_spring_hibernate</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
+      <plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>3.0.3</version>
+      </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
