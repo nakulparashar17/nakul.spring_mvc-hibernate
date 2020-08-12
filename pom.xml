@@ -143,4 +143,11 @@
       </plugins>
     </pluginManagement>
   </build>
+	
+	<distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/nakulparashar17</url>
+        </repository>
+    </distributionManagement>
 </project>
