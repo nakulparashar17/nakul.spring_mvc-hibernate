@@ -21,4 +21,4 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn deploy -Dregistry=https://maven.pkg.github.com/Sumayya-maven -Dtoken=9b85df3d5f509311f538f64ba91b3dd50f0e97be
+      run: mvn deploy -Dregistry=https://maven.pkg.github.com/Sumayya-maven -Dtoken=${{github.token}}
