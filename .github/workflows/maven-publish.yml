@@ -21,7 +21,7 @@ jobs:
     - name: Checkout tools repo
       uses: actions/checkout@v2
       with:
-       repository: demo
+       repository: nakulparashar17/demo
     - name: Publish to GitHub Packages Apache Maven
       env:
         GITHUB_TOKEN: ${{ github.token }} 
