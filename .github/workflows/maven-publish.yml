@@ -18,10 +18,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Checkout tools repo
+    - name: Checkout demo branch
       uses: actions/checkout@v2
       with:
-       repository: nakulparashar17/lms
+        ref: demo
     - name: Publish to GitHub Packages Apache Maven
       env:
         GITHUB_TOKEN: ${{ github.token }} 
